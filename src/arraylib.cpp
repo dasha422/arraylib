@@ -23,7 +23,7 @@ int arr_min( const int *arr, size_t n){
     int min=*arr;
     for (size_t i=0; i<n;i++){
         if (min> *(arr+i)){
-            min=*(arr+1);
+            min=*(arr+i);
         }
     }
     return min;
